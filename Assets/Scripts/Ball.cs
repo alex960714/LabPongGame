@@ -5,12 +5,10 @@ using UnityEngine;
 public class Ball : MonoBehaviour {
     private bool ballIsActive;
     private Vector3 ballStartPosition;
-    private Vector2 ballInitialForce;
     private Rigidbody2D ball;
 
 	// Use this for initialization
 	void Start () {
-        ballInitialForce = new Vector2(400.0f, Random.Range(-1.0f, 1.0f) > 0 ? 300.0f : -300.0f);
         ballIsActive = false;
         ballStartPosition = transform.position;
         ball = GetComponent<Rigidbody2D>();
@@ -33,7 +31,7 @@ public class Ball : MonoBehaviour {
         if (!ballIsActive)
         {
             ball.isKinematic = false;
-            ball.AddForce(ballInitialForce);
+            ball.AddForce(GetForce());
             ballIsActive = true;
         }
     }
@@ -43,8 +41,15 @@ public class Ball : MonoBehaviour {
         if (ballIsActive)
         {
             ball.isKinematic = true;
-            transform.position = ballStartPosition;
-            ballIsActive = false;
+            //transform.position = ballStartPosition;
+            //ballIsActive = false;
+            Start();
         }
+    }
+
+    Vector2 GetForce()
+    {
+        float dir_y = Random.Range(-1.0f, 1.0f);
+        return new Vector2(600.0f, 450.0f * dir_y);
     }
 }
