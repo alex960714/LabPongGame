@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class BallLevel : MonoBehaviour {
     protected bool ballIsActive;
@@ -8,6 +9,8 @@ public abstract class BallLevel : MonoBehaviour {
     protected Rigidbody2D ball;
     protected int PlayerPoints;
     protected int EnemyPoints;
+    public Text PlayerSide;
+    public Text EnemySide;
 
     // Use this for initialization
     public void Start()

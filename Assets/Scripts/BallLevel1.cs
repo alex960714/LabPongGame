@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BallLevel1 : BallLevel {
-    	
+    
 	// Update is called once per frame
 	public override void Update () {
         if (Input.GetMouseButtonDown(0))
@@ -16,11 +16,13 @@ public class BallLevel1 : BallLevel {
         if (transform.position.x > 8)
         {
             PlayerPoints++;
+            PlayerSide.text = "Player  " + PlayerPoints.ToString();
             BallFinish();
         }
         else if (transform.position.x < -8)
         {
             EnemyPoints++;
+            EnemySide.text = EnemyPoints.ToString() + "  Computer";
             BallFinish();
         }
 
