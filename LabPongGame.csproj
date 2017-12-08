@@ -224,6 +224,7 @@
     <Compile Include="Assets\Scripts\BallLevel2.cs" />
     <Compile Include="Assets\Scripts\BallLevel3.cs" />
     <Compile Include="Assets\Scripts\EnemyPlatform.cs" />
+    <Compile Include="Assets\Scripts\EOG.cs" />
     <Compile Include="Assets\Scripts\PlayerPlatform.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
