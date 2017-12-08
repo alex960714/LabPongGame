@@ -20,7 +20,7 @@ public class Ball : MonoBehaviour {
         {
             BallStart();
         }
-        if ((transform.position.x > 12) || (transform.position.x < -12))
+        if ((transform.position.x > 10) || (transform.position.x < -10))
         {
             BallFinish();
         }
@@ -41,15 +41,13 @@ public class Ball : MonoBehaviour {
         if (ballIsActive)
         {
             ball.isKinematic = true;
-            //transform.position = ballStartPosition;
-            //ballIsActive = false;
-            Start();
+            transform.position = ballStartPosition;
+            ballIsActive = false;
         }
     }
 
     Vector2 GetForce()
     {
-        float dir_y = Random.Range(-1.0f, 1.0f);
-        return new Vector2(600.0f, 450.0f * dir_y);
+        return new Vector2(600.0f, 450.0f * Random.Range(-1.0f, 1.0f));
     }
 }
