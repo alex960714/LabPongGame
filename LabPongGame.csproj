@@ -219,7 +219,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Ball.cs" />
+    <Compile Include="Assets\Scripts\BallLevel.cs" />
+    <Compile Include="Assets\Scripts\BallLevel1.cs" />
+    <Compile Include="Assets\Scripts\BallLevel2.cs" />
+    <Compile Include="Assets\Scripts\BallLevel3.cs" />
     <Compile Include="Assets\Scripts\EnemyPlatform.cs" />
     <Compile Include="Assets\Scripts\PlayerPlatform.cs" />
   </ItemGroup>

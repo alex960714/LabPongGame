@@ -24,6 +24,9 @@ bld/
 [Oo]bj/
 */metadata/*
 Temp/*
+*/ShaderCache/*
+*.exe
+*.dll
 
 # Visual Studio 2015 cache/options directory
 .vs/

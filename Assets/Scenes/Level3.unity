@@ -382,6 +382,7 @@ GameObject:
   - component: {fileID: 917705974}
   - component: {fileID: 917705973}
   - component: {fileID: 917705972}
+  - component: {fileID: 917705976}
   m_Layer: 0
   m_Name: PlayerPlatform
   m_TagString: PlayerPlatform
@@ -468,6 +469,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &917705976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 917705971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59efeec107228944881701e5bd29a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1089027965
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +492,7 @@ GameObject:
   - component: {fileID: 1089027968}
   - component: {fileID: 1089027967}
   - component: {fileID: 1089027966}
+  - component: {fileID: 1089027971}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -576,6 +589,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089027971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1089027965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464532aff0d4ac5489d4e7e3e6e725db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1104225658
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,7 +748,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -764,6 +788,7 @@ GameObject:
   - component: {fileID: 1742022695}
   - component: {fileID: 1742022694}
   - component: {fileID: 1742022693}
+  - component: {fileID: 1742022697}
   m_Layer: 0
   m_Name: EnemyPlatform
   m_TagString: EnemyPlatform
@@ -850,6 +875,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1742022697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1742022692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 335b710a79b94084d83c0889fc38b11d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballObject: {fileID: 1089027965}
 --- !u!1 &1807324240
 GameObject:
   m_ObjectHideFlags: 0
