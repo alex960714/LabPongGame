@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BallLevel1 : BallLevel {
@@ -42,7 +39,7 @@ public class BallLevel1 : BallLevel {
         {
             ball.isKinematic = false;
             ball.WakeUp();
-            ball.AddForce(new Vector2(400.0f, UnityEngine.Random.Range(-1.0f, 1.0f) > 0 ? 300.0f : -300.0f));
+            ball.AddForce(new Vector2(400.0f, UnityEngine.Random.Range(-1.0f, 1.0f) > 0 ? 310.0f : -310.0f));
             ballIsActive = true;
         }
     }
