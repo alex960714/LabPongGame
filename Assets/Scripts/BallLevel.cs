@@ -33,4 +33,9 @@ public abstract class BallLevel : MonoBehaviour {
             ballIsActive = false;
         }
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        GetComponent<AudioSource>().Play();
+    }
 }

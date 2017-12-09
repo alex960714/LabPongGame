@@ -226,6 +226,7 @@
     <Compile Include="Assets\Scripts\EnemyPlatform.cs" />
     <Compile Include="Assets\Scripts\EOG.cs" />
     <Compile Include="Assets\Scripts\PlayerPlatform.cs" />
+    <Compile Include="Assets\Scripts\SoundsController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
